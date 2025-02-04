@@ -2,29 +2,19 @@
 
 This is a Spring Boot application that provides a RESTful API for managing a library. Users can perform CRUD (Create, Read, Update, Delete) operations on books, ensuring efficient book management.
 
-Features
-
+Features:
 Retrieve a list of all books (GET /api/books)
-
 Retrieve details of a specific book (GET /api/books/{id})
-
 Add a new book (POST /api/books)
-
 Update an existing book (PUT /api/books/{id})
-
 Delete a book (DELETE /api/books/{id})
 
 Tech Stack:
-
-Java
-
-Spring Boot (Spring Web, Spring Data JPA)
-
-Hibernate (via Spring Data JPA)
-
-MySQL
-
-Maven
+  Java
+  Spring Boot (Spring Web, Spring Data JPA)
+  Hibernate (via Spring Data JPA)
+  MySQL
+  Maven
 
 Setup: 
 
