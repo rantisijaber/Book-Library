@@ -1,24 +1,28 @@
 package com.rantisi.library.model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 
 @Entity
 @Table (name = "books")
-public class Books {
+public class Book {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private String title;
 
     private String author;
 
+    @JsonProperty("publication")
     @Column(name = "publication_year")
     private int yearPublished;
+
+    public Book() {}
 
     public void setAuthor(String author) {
         this.author = author;
@@ -41,13 +45,21 @@ public class Books {
     public int getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "Books [id=" + id + ", title=" + title + ", author=" + author + ", yearPublished=" + yearPublished + "]";
+    public Book(int id, String title, String author, int yearPublished) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
+
     }
+
+
+
+
+
 
 }
