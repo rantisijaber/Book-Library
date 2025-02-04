@@ -17,8 +17,10 @@ Tech Stack:
 - Maven
 
 I am currently working on:
-- Integrating Spring Security for authentication and role-based access control
+- Adding meaningful comments throughout the code to improve clarity and explain functionality.
 - Building a frontend using Thymeleaf for dynamic, server-rendered web pages
+- Integrating Spring Security for authentication and role-based access control
+  
 
 Setup: 
 1. Clone the repository
