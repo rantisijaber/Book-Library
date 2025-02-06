@@ -22,14 +22,15 @@ public class LibraryService {
         return libraryRepo.findAll();
     }
 
-    public Book findById(Integer id) {
+    public Book findById(Integer id, boolean isAPI) {
         Optional<Book> book = libraryRepo.findById(id);
-        if (book.isEmpty()) {
+        if (isAPI) {
             throw new BookNotFoundException();
-
+        } else {
+            return book.orElse(null);
         }
-        return book.get();
     }
+
     public void create(Book book) {
         libraryRepo.save(book);
     }

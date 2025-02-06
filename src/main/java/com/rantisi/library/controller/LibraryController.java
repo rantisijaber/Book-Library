@@ -12,7 +12,6 @@ import java.util.List;
 public class LibraryController {
 
 
-
     private final LibraryService libraryService;
 
     public LibraryController(LibraryService libraryService) {
@@ -27,7 +26,7 @@ public class LibraryController {
 
    @GetMapping("/{id}")
    public Book findById(@PathVariable Integer id) {
-        return libraryService.findById(id);
+        return libraryService.findById(id, true);
    }
 
    @ResponseStatus(HttpStatus.CREATED)
