@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-// Creates the methods and business logic that will be used in the controller
+// Creates the methods and business logic that will be used in the controller layer
 @Service
 public class LibraryService {
 
