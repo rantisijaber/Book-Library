@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import com.rantisi.library.service.LibraryService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -42,6 +43,21 @@ public class PageController {
         }
 
         return "search";
+    }
+
+    @GetMapping("/update")
+    public String crud(Model model) {
+        return "update";
+    }
+    @PostMapping("/update")
+    public String create(Model model,
+                         @RequestParam(name = "title") String title,
+                         @RequestParam(name = "author") String author,
+                         @RequestParam(name = "publicationYear") Integer publicationYear) {
+        Book book = libraryService.create(new Book(title, author, publicationYear));
+        model.addAttribute("book", book);
+
+        return "update";
     }
 
 

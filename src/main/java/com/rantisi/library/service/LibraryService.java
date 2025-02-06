@@ -37,8 +37,9 @@ public class LibraryService {
     }
 
     // Creates a new book, saves it to the database, and can be accessed via the API
-    public void create(Book book) {
+    public Book create(Book book) {
         libraryRepo.save(book);
+        return book;
     }
     // Updates the book, saves new information to the database, can be accessed via API
     public void update(Book book, Integer id) {

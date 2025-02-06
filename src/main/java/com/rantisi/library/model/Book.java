@@ -24,6 +24,12 @@ public class Book {
 
     public Book() {}
 
+    public Book(String title, String author, Integer publicationYear) {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = publicationYear;
+    }
+
     public void setAuthor(String author) {
         this.author = author;
     }
@@ -49,7 +55,7 @@ public class Book {
         this.id = id;
     }
 
-    public Book(int id, String title, String author, int yearPublished) {
+    public Book(Integer id, String title, String author, Integer yearPublished) {
         this.id = id;
         this.title = title;
         this.author = author;
