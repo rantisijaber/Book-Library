@@ -58,6 +58,7 @@ public class PageController {
         model.addAttribute("book", book);
 
         return "update";
+
     }
 
 

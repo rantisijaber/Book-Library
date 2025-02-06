@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search for Book with ID</title>
+</head>
+<body>
+<nav>
+  <a href="/books/search">Search</a>
+  <a href="/books">Home</a>
+</nav>
+  <h1>Create, Update, Delete Books</h1>
+<br>
+<br>
+<h2>Creation of New Book</h2>
+  <form action="/books/update" method="post">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="author">Author</label>
+    <input type="text" id="author" name="author" required>
+
+    <label for="publicationYear">Publication year</label>
+    <input type="number" name="publicationYear" id="publicationYear" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+
+</body>
+</html>
