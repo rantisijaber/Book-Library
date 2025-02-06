@@ -15,6 +15,7 @@ Tech Stack:
 - Hibernate (via Spring Data JPA)
 - MySQL
 - Maven
+- Thymeleaf
 
 I am currently working on:
 - Adding meaningful comments throughout the code to improve clarity and explain functionality.
