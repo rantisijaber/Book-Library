@@ -1,4 +1,5 @@
 ﻿# Book-Library
+NOT YET COMPLETE (working on frontend and adding security)
 
 This is a Spring Boot application that provides a RESTful API for managing a library. Users can perform CRUD (Create, Read, Update, Delete) operations on books, ensuring efficient book management.
 
