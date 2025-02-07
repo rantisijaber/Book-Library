@@ -29,7 +29,7 @@ public class LibraryService {
     // Finds book by ID
     public Book findById(Integer id, boolean isAPI) {
         Optional<Book> book = libraryRepo.findById(id);
-        if (isAPI) {
+        if (isAPI && book.isEmpty()) {
             throw new BookNotFoundException();
         } else {
             return book.orElse(null);
@@ -42,12 +42,13 @@ public class LibraryService {
         return book;
     }
     // Updates the book, saves new information to the database, can be accessed via API
-    public void update(Book book, Integer id) {
+    public Book update(Book book, Integer id) {
         if (!libraryRepo.existsById(id)) {
             throw new BookNotFoundException();
         }
         book.setId(id);
         libraryRepo.save(book);
+        return book;
     }
 
     // Deletes the book, removes it from the database, can be accessed via API
