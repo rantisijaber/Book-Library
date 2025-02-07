@@ -3,6 +3,8 @@ NOT YET COMPLETE (working on frontend and adding security)
 
 This is a Spring Boot application that provides a RESTful API for managing a library. Users can perform CRUD (Create, Read, Update, Delete) operations on books, ensuring efficient book management.
 
+Any changes made, whether through the user interface or via HTTP requests, will be reflected in the database.
+
 PageController (Frontend Interaction & CRUD Operations):
 -The PageController is responsible for managing the web pages that users interact with and handles CRUD operations directly via the frontend. It facilitates viewing, searching, creating, and updating books through a user interface.
 - View All Books: When users visit the /books page, the PageController retrieves a list of all books in the library via the libraryService.findAll() method and displays them on the page using the index view in table format.
@@ -12,7 +14,7 @@ PageController (Frontend Interaction & CRUD Operations):
 
 LibraryController (API Interaction):
 
-- The LibraryController provides RESTful API endpoints that allow external systems or frontend JavaScript to interact with the library's data. It follows the principles of CRUD operations using HTTP methods like GET, POST, PUT, and DELETE to manipulate book data.
+- The LibraryController provides RESTful API endpoints that allows interaction with the library's data. It follows the principles of CRUD operations using HTTP methods like GET, POST, PUT, and DELETE to manipulate book data.
 - Retrieve All Books: The GET /api/books endpoint retrieves a list of all books in the library, returning them in JSON format.
 - Retrieve a Specific Book: The GET /api/books/{id} endpoint retrieves the details of a book based on the provided ID. If the book exists, its details are returned as a JSON object.
 - Create a New Book: The POST /api/books endpoint allows users to create a new book by sending the book data (title, author, and publication year) in the request body as a JSON object. Upon successful creation, the new book is added to the library.
