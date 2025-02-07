@@ -11,6 +11,7 @@ PageController (Frontend Interaction & CRUD Operations):
 -Update an Existing Book: If users want to update a book, they can submit a form with the updated information (title, author, publication year). A PUT request is sent to the /books/update endpoint to update the book in the system. If the book with the provided ID is found, it gets updated, and the changes are reflected on the update page.
 
 LibraryController (API Interaction):
+
 -The LibraryController provides RESTful API endpoints that allow external systems or frontend JavaScript to interact with the library's data. It follows the principles of CRUD operations using HTTP methods like GET, POST, PUT, and DELETE to manipulate book data.
 -Retrieve All Books: The GET /api/books endpoint retrieves a list of all books in the library, returning them in JSON format.
 -Retrieve a Specific Book: The GET /api/books/{id} endpoint retrieves the details of a book based on the provided ID. If the book exists, its details are returned as a JSON object.
