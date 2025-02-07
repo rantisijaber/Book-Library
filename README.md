@@ -8,7 +8,7 @@ PageController (Frontend Interaction & CRUD Operations):
 - View All Books: When users visit the /books page, the PageController retrieves a list of all books in the library via the libraryService.findAll() method and displays them on the page using the index view in table format.
 - Search for a Book: If a user wants to search for a book by its ID, they can visit the /books/search endpoint. If the book is found, its details are displayed; otherwise, an error message is shown (e.g., "Book not found at ID: X").
 - Create a New Book: Users can navigate to the /books/update page and submit a form to create a new book. The book details (title, author, and publication year) are sent via a POST request to the same /update endpoint. The create() method creates the new book and displays the result on the update page.
-- Update an Existing Book: If users want to update a book, they can submit a form with the updated information (title, author, publication year). A PUT request is sent to the /books/update endpoint to update the book in the system. If the book with the provided ID is found, it gets updated, and the changes are reflected on the update page.
+- (Working on delete and update)
 
 LibraryController (API Interaction):
 
