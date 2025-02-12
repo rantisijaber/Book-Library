@@ -6,11 +6,9 @@ This is a Spring Boot application that provides a RESTful API for managing a lib
 Any changes made, whether through the user interface or via HTTP requests, will be reflected in the database.
 
 PageController:
--The PageController is responsible for managing the web pages that users interact with and handles CRUD operations directly via the frontend. It facilitates viewing, searching, creating, and updating books through a user interface.
+-The PageController is responsible for managing the web pages that users interact with and handles CRUD operations directly via the frontend. It facilitates viewing and searching for books through a user interface.
 - View All Books: When users visit the /books page, the PageController retrieves a list of all books in the library via the libraryService.findAll() method and displays them on the page using the index view in table format.
-- Search for a Book: If a user wants to search for a book by its ID, they can visit the /books/search endpoint. If the book is found, its details are displayed; otherwise, an error message is shown (e.g., "Book not found at ID: X").
-- Create a New Book: Users can navigate to the /books/update page and submit a form to create a new book. The book details (title, author, and publication year) are sent via a POST request to the same /update endpoint. The create() method creates the new book and displays the result on the update page.
-- (Working on delete and update)
+
 
 LibraryController (API Interaction):
 
