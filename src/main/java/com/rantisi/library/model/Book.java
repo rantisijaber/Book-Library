@@ -20,7 +20,7 @@ public class Book {
 
     @JsonProperty("publication")
     @Column(name = "publication_year")
-    private int yearPublished;
+    private Integer yearPublished;
 
     public Book() {}
 
@@ -36,10 +36,10 @@ public class Book {
     public String getAuthor() {
         return author;
     }
-    public void setYearPublished(int yearPublished) {
+    public void setYearPublished(Integer yearPublished) {
         this.yearPublished = yearPublished;
     }
-    public int getYearPublished() {
+    public Integer getYearPublished() {
         return yearPublished;
     }
     public void setTitle(String title) {
