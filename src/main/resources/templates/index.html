@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <title>Book List</title>
 </head>
 <body>
 
-<nav>
+<nav id="indexNav">
   <a href="/books/search">Search</a>
-  <a href="/books/update">Edit List</a>
-  <a href="/books/create">Create New Book</a>
+  <a href="/books/update">Update</a>
+  <a href="/books/create">Create</a>
+  <a href="/books/delete">Delete</a>
 </nav>
-<h1>List of Books</h1>
+<div id="headerDiv">
+  <h1 id="indexHeader">List of Books</h1>
+</div>
 
 <table border="1" id="tableHome">
   <tr>
@@ -21,11 +24,15 @@
     <th>Publication</th>
   </tr>
   <tr th:each="book : ${books}">
-    <td th:text="${book.id}"></td>
-    <td th:text="${book.title}"></td>
-    <td th:text="${book.author}"></td>
-    <td th:text="${book.yearPublished}"></td>
+    <td th:text="${book.id}" class="bookInfo"></td>
+    <td th:text="${book.title}" class="bookInfo"></td>
+    <td th:text="${book.author}" class="bookInfo"></td>
+    <td th:text="${book.yearPublished}" class="bookInfo"></td>
   </tr>
 </table>
+<div id="indexQuote">
+  <p id="indexQuoteItself">“Until I feared I would lose it, I never loved to read. One does not love breathing.”</p>
+  <p id="indexQuoteAuthor">-Harper Lee</p>
+</div>
 </body>
 </html>
