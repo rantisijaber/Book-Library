@@ -1,0 +1,33 @@
+* {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+#tableHome {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+}
+
+.bookInfo {
+    text-align: center;
+}
+
+#indexNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#headerDiv {
+    text-align: center;
+}
+
+#indexQuote {
+    text-align: center;
+}
+#indexQuoteItself {
+    font-size: x-large;
+}
