@@ -22,7 +22,7 @@ The application follows the Controller-Service-Repository pattern for a clean an
 - Manages web pages users interact with.
 - Retrieves all books and displays them in a table format.
 - Allows searching for books via a simple ID-based lookup.
-- 
+  
 **LibraryController:** (Handles API Requests)
 - Provides a RESTful API for interacting with the book data.
 - Implements full CRUD functionality:
