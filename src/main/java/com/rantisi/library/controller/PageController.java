@@ -51,4 +51,9 @@ public class PageController {
         return "update";
     }
 
+    @GetMapping("/delete")
+    public String delete(Model model) {
+        return "delete";
+    }
+
 }

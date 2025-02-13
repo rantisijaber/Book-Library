@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search for Book with ID</title>
+  <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+<nav>
+  <a href="/books">Home</a>
+  <a href="/books/search">Search</a>
+  <a href="/books/create">Create</a>
+  <a href="/books/update">Update</a>
+</nav>
+<form id="deleteForm">
+  <label for="idDelete">ID</label>
+  <input type="number" id="idDelete">
+
+  <button type="submit">Submit</button>
+
+</form>
+<p id="responseMessage"></p>
+
+<script src="/main.js"></script>
+</body>
+</html>
