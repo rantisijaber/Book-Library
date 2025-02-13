@@ -9,23 +9,32 @@
   <a href="/books/search">Search</a>
   <a href="/books">Home</a>
 </nav>
-  <h1>Create, Update, Delete Books</h1>
+<h1>Create, Update, Delete Books</h1>
 <br>
 <br>
-<h2>Creation of New Book</h2>
-  <form action="/books/update" method="post">
-    <label for="title">Title</label>
-    <input type="text" id="title" name="title" required>
+<h2>Update a Book</h2>
+<form id="update">
 
-    <label for="author">Author</label>
-    <input type="text" id="author" name="author" required>
+  <!-- Book ID -->
+  <label for="idUpdate">Book ID</label>
+  <input type="number" id="idUpdate" name="id" required/>
 
-    <label for="publicationYear">Publication year</label>
-    <input type="number" name="publicationYear" id="publicationYear" required>
+  <!-- Book Title -->
+  <label for="titleUpdate">Title</label>
+  <input type="text" id="titleUpdate" name="title" required/>
 
-    <button type="submit">Submit</button>
-  </form>
+  <!-- Book Author -->
+  <label for="authorUpdate">Author</label>
+  <input type="text" id="authorUpdate" name="author" required/>
 
+  <!-- Book Publication Year -->
+  <label for="publicationYearUpdate">Publication Year</label>
+  <input type="text" id="publicationYearUpdate" name="publicationYear" required/>
 
+  <button type="submit">Submit</button>
+</form>
+
+<p id="responseMessage"></p>
+<script src="/main.js"></script>
 </body>
 </html>
