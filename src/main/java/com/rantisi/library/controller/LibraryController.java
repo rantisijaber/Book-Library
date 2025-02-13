@@ -49,8 +49,7 @@ public class LibraryController {
        return ResponseEntity.noContent().build();
    }
 
-   @ResponseStatus(HttpStatus.NO_CONTENT)
-   @DeleteMapping("/{id}")
+   @DeleteMapping("/delete/{id}")
    public ResponseEntity<Void> delete(@PathVariable Integer id) {
         libraryService.delete(id);
         return ResponseEntity.noContent().build();
