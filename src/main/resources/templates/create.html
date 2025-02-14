@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Search for Book with ID</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 </head>
-<body>
-<nav>
-    <a href="/books/search">Search</a>
-    <a href="/books">Home</a>
-    <a href="/books/update">Update</a>
-    <a href="/books/delete">Delete Books</a>
+<body class="createPage">
+<nav id="createNav">
+
+    <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
+
+    <a href="/books/search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+
+    <a href="/books/update"><i class="fa-solid fa-pencil"></i>Update</a>
+
+    <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
 </nav>
-<h1>Create, Update, Delete Books</h1>
-<br>
-<br>
-<h2>Creation of New Book</h2>
+<div id="createHeaderDiv">
+    <h1 id="createHeader">Creation of New Book</h1>
+</div>
 <form id="create">
-    <label for="title">Title</label>
+    <label for="title" id="titleLabel">Title</label>
     <input type="text" id="title" name="title" required>
 
-    <label for="author">Author</label>
+    <label for="author" id="authorLabel">Author</label>
     <input type="text" id="author" name="author" required>
 
-    <label for="publicationYear">Publication year</label>
+    <label for="publicationYear" id="yearLabel">Publication year</label>
     <input type="number" name="publicationYear" id="publicationYear" required>
 
-    <button type="submit" id="submitButton">Submit</button>
+    <button type="submit" id="submitButtonCreate">Add Book</button>
 </form>
 <p id="responseMessage"></p>
+<div id="createQuoteDiv">
+    <p id="createQuote">"Books are a uniquely portable magic"</p>
+    <p id="createQuoteAuthor">Stephen King</p>
+    <img id="imageCreate" th:src="@{/images/imageCreate.jpg}" alt="Book image">
+</div>
 <script src="/main.js"></script>
 
 </body>
