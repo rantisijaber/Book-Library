@@ -1,15 +1,39 @@
+/* Index (Home) file */
 * {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: lightskyblue;
 }
 
+#indexNav a {
+    color: white;
+    font-weight: bold;
+}
+i {
+    margin-right: 10px;
+}
+
+/* Header */
+#headerDiv {
+    text-align: center;
+    color: white;
+}
+/* Table */
 #tableHome {
-    width: 100%;
+    width: 75%;
     border-collapse: collapse;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    margin: auto;
+
 }
 
+th, td {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+
+}
 .bookInfo {
     text-align: center;
 }
@@ -19,15 +43,135 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+
+}
+#indexNav a {
+    color: white;
+    font-weight: bold;
+}
+i {
+    margin-right: 10px;
 }
 
-#headerDiv {
-    text-align: center;
-}
+
 
 #indexQuote {
     text-align: center;
 }
 #indexQuoteItself {
     font-size: x-large;
+    color: white;
+    font-weight: bold;
+
 }
+#indexQuoteAuthor {
+    font-size: larger;
+    color: white;
+}
+#imgIndex {
+    width: 100px;
+    height: 100px;
+}
+
+/* Create Page */
+.createPage * {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: lightskyblue;
+}
+
+/* Create Nav */
+#createNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+#createNav a {
+    color: white;
+    font-weight: bold;
+}
+i {
+    margin-right: 10px;
+}
+
+/* Create Header */
+#createHeaderDiv {
+    text-align: center;
+}
+#createHeader {
+    color: white;
+}
+
+/* Create Input Form */
+#create {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+#titleLabel {
+    font-size: 30px;
+}
+#title {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+}
+#authorLabel {
+    font-size: 30px;
+}
+#author {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+}
+#yearLabel {
+    font-size: 30px;
+}
+#publicationYear {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+}
+#submitButtonCreate {
+    border-radius: 12px;
+    border-color: white;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+
+
+
+
+
+/* Other */
+#createQuoteDiv {
+    text-align: center;
+}
+#createQuote {
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+
+}
+#createQuoteAuthor {
+    font-size: larger;
+    color: white;
+}
+#imageCreate {
+    width: 100px;
+    height: 100px;
+}
+
+
