@@ -1,6 +1,6 @@
 # **Library Management System**
 
-This Spring Boot application provides a RESTful API and a Thymeleaf-powered frontend for managing a library. Users can Create, Read, Update, and Delete (CRUD) book records, with all changes reflected in a MySQL database.
+This Spring Boot application provides a RESTful API and a Javascript and Thymeleaf managed frontend for managing a library. Users can Create, Read, Update, and Delete (CRUD) book records, with all changes reflected in a MySQL database.
 
 ![Screenshot](src/main/resources/static/images/book-library-project.png)
 
