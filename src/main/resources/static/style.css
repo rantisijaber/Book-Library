@@ -1,4 +1,4 @@
-/* Index (Home) file */
+/* ------------- Index (Home) file ------------- */
 * {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: lightskyblue;
@@ -104,7 +104,7 @@ i {
     color: white;
 }
 
-/* Create Input Form */
+/* ------------- Create Book Input Form ------------- */
 #create {
     color: white;
     display: flex;
@@ -157,12 +157,6 @@ i {
     height: 40px;
     color: white;
 }
-
-
-
-
-
-
 /* Other */
 #messageDiv {
     text-align: center;
@@ -189,3 +183,86 @@ i {
 }
 
 
+/* ------------- Search Page ------------- */
+
+/* Search Nav */
+#searchNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#searchNav a {
+    color: white;
+}
+
+/* Search Header */
+#searchHeaderDiv {
+    text-align: center;
+}
+
+#searchHeader {
+    color: white;
+}
+
+
+/* Search Bar */
+#searchBarForm {
+    text-align: center;
+}
+#idSearchInput {
+    border-radius: 12px;
+    text-align: center;
+    font-size: 17px;
+    border-color: white;
+    width: 50px;
+    height: 40px;
+    background: white;
+
+}
+#searchLabel {
+    color: white;
+}
+#searchButton {
+    color: white;
+    border-color: white;
+    border-radius: 12px;
+    width: 80px;
+    height: 45px;
+}
+
+/* Search Book Information Table */
+#searchTable {
+    border-radius: 12px;
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+/* Other (Search) */
+#otherSearch {
+    text-align: center;
+
+}
+#catImageSearch {
+    width: 100px;
+    height: 100px
+}
+#quoteSearch {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+#quoteAuthorSearch {
+    color: white;
+    font-size: large;
+}
+#errorDiv {
+    text-align: center;
+}
+#responseMessageSearch {
+    color: white;
+    font-size: 20px;
+}
