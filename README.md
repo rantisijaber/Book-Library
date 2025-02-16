@@ -7,6 +7,7 @@ This Spring Boot application provides a RESTful API and a frontend powered by Ja
 
 **Frontend:** (Thymeleaf + JavaScript)
 - Dynamic Book Management UI: Users can view, search, add, update, and delete books through a web interface.
+- Thymeleaf: used for server-side rendering of GET requests, allowing dynamic book details and list pages to be generated and displayed on the client.
 - Interactive Search: Allows users to search for books by ID and display the results dynamically.
 - JavaScript API Integration: The frontend uses fetch API for POST, PUT, and DELETE operations, enabling communication with the backend.
   
