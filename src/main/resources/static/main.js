@@ -52,15 +52,15 @@ if (updatePage) {
             });
 
             if (response.ok) {
-                document.getElementById('responseMessage').innerHTML = 'Book updated successfully!'
+                document.getElementById('responseMessageUpdate').innerHTML = 'Book updated successfully!'
 
             } else {
                 console.error('Failed to create book', response.status);
-                document.getElementById("responseMessage").innerHTML = 'Failed to update book :(';
+                document.getElementById("responseMessageUpdate").innerHTML = 'Failed to update book :(';
             }
         } catch (error) {
             console.log('Error: ', error);
-            document.getElementById('responseMessage').innerHTML = 'Error occurred';
+            document.getElementById('responseMessageUpdate').innerHTML = 'Error occurred';
 
 
         }
