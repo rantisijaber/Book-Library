@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Search for Book with ID</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+
 </head>
 <body>
-<nav>
-  <a href="/books/search">Search</a>
-  <a href="/books">Home</a>
+<nav id="updateNav">
+  <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="/books/search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+  <a href="/books/create"><i class="fa-solid fa-square-plus"></i>Create</a>
+  <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
+
 </nav>
-<h1>Create, Update, Delete Books</h1>
-<br>
-<br>
-<h2>Update a Book</h2>
-<form id="update">
+<div id="updateHeaderDiv">
+  <h1 id="updateHeader">Update Book</h1>
+</div>
+
+<form id="updateForm">
 
   <!-- Book ID -->
   <label for="idUpdate">Book ID</label>
@@ -30,11 +36,18 @@
   <!-- Book Publication Year -->
   <label for="publicationYearUpdate">Publication Year</label>
   <input type="text" id="publicationYearUpdate" name="publicationYear" required/>
-
-  <button type="submit">Submit</button>
+  <p id="responseMessageUpdate"></p>
+  <div id="updateButtonDiv">
+    <button type="submit" id="updateButton">Save</button>
+  </div>
 </form>
 
-<p id="responseMessage"></p>
+<div id="otherUpdate">
+  <p id="quoteUpdate">"Books are, let's face it, better than everything else. If we played Cultural Fantasy Boxing League, and made books go fifteen rounds in the ring against the best that any other art form had to offer, then books would win pretty much every time."</p>
+  <p id="quoteAuthorUpdate">–Nick Hornby</p>
+  <img src="/images/updatebookimage.jpg" alt="updatebookimage" id="updateImage">
+</div>
+
 <script src="/main.js"></script>
 </body>
 </html>

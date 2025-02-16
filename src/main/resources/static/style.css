@@ -1,4 +1,4 @@
-/* ------------- Index (Home) file ------------- */
+/* ------------- Index (Home) page ------------- */
 * {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: lightskyblue;
@@ -74,10 +74,6 @@ i {
 }
 
 /* Create Page */
-.createPage * {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background: lightskyblue;
-}
 
 /* Create Nav */
 #createNav {
@@ -340,4 +336,110 @@ i {
 #responseMessageDelete {
     color: white;
     font-size: 20px;
+}
+
+/* ------------- Update Page ------------- */
+
+/* Nav Update */
+#updateNav {
+    display: flex;
+    justify-content: space-around;
+}
+#updateNav a {
+    color: white;
+}
+
+/* Header Update */
+#updateHeaderDiv {
+    text-align: center;
+}
+#updateHeader {
+    color: white;
+}
+
+/* Update Form */
+
+#updateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#updateForm label {
+    color: white;
+}
+
+
+#idUpdate {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+    text-align: center;
+
+}
+#updateButtonDiv {
+    text-align: center;
+}
+#updateForm button {
+    border-radius: 12px;
+    border-color: white;
+    width: 300px;
+    height: 80px;
+    color: white;
+    font-size: 30px;
+}
+
+#titleUpdate {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+    text-align: center;
+
+}
+
+#authorUpdate {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+    text-align: center;
+
+}
+
+#publicationYearUpdate {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+    text-align: center;
+
+}
+
+/* Other (Update) */
+
+#otherUpdate {
+    text-align: center;
+
+}
+
+#quoteUpdate {
+    color: white;
+    font-size: x-large;
+}
+
+#quoteAuthorUpdate {
+    color: white;
+    font-size: large;
+}
+
+#updateImage {
+    width: 200px;
+    height: auto;
 }
