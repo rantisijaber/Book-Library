@@ -69,8 +69,8 @@ i {
     color: white;
 }
 #imgIndex {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Create Page */
@@ -178,8 +178,8 @@ i {
     color: white;
 }
 #imageCreate {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -247,8 +247,8 @@ i {
 
 }
 #catImageSearch {
-    width: 100px;
-    height: 100px
+    width: 200px;
+    height: 200px
 }
 #quoteSearch {
     color: white;
@@ -263,6 +263,81 @@ i {
     text-align: center;
 }
 #responseMessageSearch {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ------------- Delete Page ------------- */
+
+/* Nav Delete */
+#deleteNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#deleteNav a {
+    color: white;
+}
+
+/* Header Delete */
+#deleteHeaderDiv {
+    text-align: center;
+}
+
+#deleteHeader {
+    color: white;
+}
+
+/* ID Delete */
+
+#deleteForm {
+    text-align: center;
+}
+#idDelete {
+    border-radius: 12px;
+    text-align: center;
+    font-size: 17px;
+    border-color: white;
+    width: 50px;
+    height: 40px;
+    background: white;
+
+}
+#deleteLabel {
+    color: white;
+}
+
+#deleteButton {
+    color: white;
+    border-color: white;
+    border-radius: 12px;
+    width: 80px;
+    height: 45px;
+}
+
+/* Other Delete */
+#deleteOther {
+    text-align: center;
+}
+#quoteDelete {
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+
+}
+#quoteDeleteAuthor {
+    font-size: larger;
+    color: white;
+}
+#deleteImage {
+    width: 200px;
+    height: auto;
+}
+#deleteResponseDiv {
+    text-align: center;
+}
+#responseMessageDelete {
     color: white;
     font-size: 20px;
 }
