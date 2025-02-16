@@ -81,16 +81,15 @@ if (deletePage) {
             });
 
             if (response.ok) {
-                document.getElementById('responseMessage').innerHTML = 'Book Deleted Successfully';
+                document.getElementById('responseMessageDelete').innerHTML = 'Book Deleted Successfully';
             } else {
-                document.getElementById('responseMessage').innerHTML = 'Book was not deleted';
+                document.getElementById('responseMessageDelete').innerHTML = 'Book was not deleted, ID was not found';
             }
 
         } catch (error) {
-            document.getElementById('responseMessage').innerHTML = 'Error deleting book';
+            document.getElementById('responseMessageDelete').innerHTML = 'Error deleting book' + error;
 
         }
-
     });
 
 

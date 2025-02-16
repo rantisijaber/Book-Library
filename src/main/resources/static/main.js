@@ -90,7 +90,6 @@ if (deletePage) {
             document.getElementById('responseMessageDelete').innerHTML = 'Error deleting book' + error;
 
         }
-
     });
 
 
