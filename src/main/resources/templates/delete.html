@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Search for Book with ID</title>
-  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-<nav>
-  <a href="/books">Home</a>
-  <a href="/books/search">Search</a>
-  <a href="/books/create">Create</a>
-  <a href="/books/update">Update</a>
+<nav id="deleteNav">
+  <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="/books/search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+  <a href="/books/create"><i class="fa-solid fa-square-plus"></i>Create</a>
+  <a href="/books/update"><i class="fa-solid fa-pencil"></i>Update</a>
 </nav>
+<div id="deleteHeaderDiv">
+  <h1 id="deleteHeader">Delete a Book</h1>
+</div>
 <form id="deleteForm">
-  <label for="idDelete">ID</label>
+  <label for="idDelete" id="deleteLabel">ID</label>
   <input type="number" id="idDelete">
-  <button type="submit">Submit</button>
+  <button type="submit" id="deleteButton">Submit</button>
 </form>
-<p id="responseMessage"></p>
+<div id="deleteResponseDiv">
+  <p id="responseMessageDelete"></p>
+</div>
+<div id="deleteOther">
+  <p id="quoteDelete">"Books are mirrors: You only see in them what you already have inside you."</p>
+  <p id="quoteDeleteAuthor">–Carlos Ruiz Zafón</p>
+  <img src="/images/spacebookimage.webp" alt="" id="deleteImage">
+</div>
 <script src="/main.js"></script>
 </body>
 </html>
