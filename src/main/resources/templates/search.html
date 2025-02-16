@@ -3,26 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Search for Book with ID</title>
-  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 </head>
 <body>
-<nav>
-  <a href="/books">Home</a>
-  <a href="/books/update">Edit List</a>
-  <a href="/books/create">Create New Book</a>
-  <a href="/books/delete">Delete Books</a>
+<nav id="searchNav">
+  <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
+
+  <a href="/books/update"><i class="fa-solid fa-pencil"></i>Update</a>
+
+  <a href="/books/create"><i class="fa-solid fa-square-plus"></i>Create</a>
+
+  <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
 </nav>
-<form action="/books/search" method="get">
-  <label for="id">Enter Book ID:</label>
-  <input type="number" id="id" name="id" required>
-  <button type="submit">Search</button>
+
+<div id="searchHeaderDiv">
+  <h1 id="searchHeader">Search</h1>
+</div>
+<form action="/books/search" method="get" id="searchBarForm">
+  <label for="idSearchInput" id="searchLabel">Enter Book ID:</label>
+  <input type="number" id="idSearchInput" name="id" required>
+  <button type="submit" id="searchButton">Search</button>
 </form>
+<br>
+
 <div th:if="${error}">
   <p th:text="${error}"></p>
 </div>
+
 <div th:if="${book}">
-  <table border="1">
+
+  <table border="1" id="searchTable">
     <tr>
       <th>ID</th>
       <th>Title</th>
@@ -36,6 +49,11 @@
       <td th:text="${book.yearPublished}"></td>
     </tr>
   </table>
+</div>
+<div id="otherSearch">
+  <p id="quoteSearch">"Books are a uniquely portable magic"</p>
+  <p id="quoteAuthorSearch">-Stephen King</p>
+  <img src="/images/catimagebook.jpg" alt="" id="catImageSearch">
 </div>
 </body>
 </html>
