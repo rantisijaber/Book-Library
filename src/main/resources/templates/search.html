@@ -5,36 +5,32 @@
   <title>Search for Book with ID</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
 </head>
-<body>
-<nav id="searchNav">
-  <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
+<body class="search-page">
 
-  <a href="/books/update"><i class="fa-solid fa-pencil"></i>Update</a>
-
-  <a href="/books/create"><i class="fa-solid fa-square-plus"></i>Create</a>
-
-  <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
+<nav id="searchNav" class="nav">
+  <a href="/books" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="/books/search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+  <a href="/books/create" class="nav-link"><i class="fa-solid fa-square-plus"></i>Create</a>
+  <a href="/books/update" class="nav-link"><i class="fa-solid fa-pencil"></i>Update</a>
+  <a href="/books/delete" class="nav-link"><i class="fa-solid fa-delete-left"></i>Delete</a>
 </nav>
 
-<div id="searchHeaderDiv">
-  <h1 id="searchHeader">Search</h1>
+<div class="header">
+  <h1 id="searchHeader" class="page-header">Search for Book</h1>
 </div>
-<form action="/books/search" method="get" id="searchBarForm">
-  <label for="idSearchInput" id="searchLabel">Enter Book ID:</label>
-  <input type="number" id="idSearchInput" name="id" required>
-  <button type="submit" id="searchButton">Search</button>
+
+<form action="/books/search" method="get" id="searchBarForm" class="form">
+  <label for="idSearchInput" id="searchLabel" class="form-label">Enter Book ID:</label>
+  <input type="number" id="idSearchInput" name="id" required class="form-input">
+  <button type="submit" id="searchButton" class="form-button">Search</button>
 </form>
 <br>
-
-<div th:if="${error}" id="errorDiv">
-  <p th:text="${error}" id="responseMessageDelete"></p>
+<div th:if="${error}" id="errorDiv" class="response-message">
+  <p th:text="${error}" id="responseMessage"></p>
 </div>
 
-<div th:if="${book}">
-
+<div th:if="${book}" class="search-result">
   <table border="1" id="searchTable">
     <tr>
       <th>ID</th>
@@ -50,11 +46,18 @@
     </tr>
   </table>
 </div>
-<div id="otherSearch">
-  <p id="quoteSearch">"Books are a uniquely portable magic"</p>
-  <p id="quoteAuthorSearch">-Stephen King</p>
-  <img src="/images/catimagebook.jpg" alt="" id="catImageSearch">
+
+<div class="quote-container">
+  <p class="quote" id="quoteSearch">"Books are a uniquely portable magic"</p>
+  <p class="quote-author" id="quoteAuthorSearch">-Stephen King</p>
+  <img src="/images/catimagebook.jpg" alt="" id="catImageSearch" class="image">
 </div>
+
 </body>
 </html>
+
+
+
+
+
 
