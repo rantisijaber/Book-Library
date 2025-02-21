@@ -43,7 +43,6 @@ The application follows the Controller-Service-Repository pattern for a clean an
 - Maven (Build and dependency management)
   
 **Current Development**
-- Styling using CSS
 - Adding comments and documentation for better code clarity.
 
 **Setup Instructions:**
