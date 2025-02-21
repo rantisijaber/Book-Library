@@ -2,46 +2,43 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Search for Book with ID</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Update Book Information</title>
   <link rel="stylesheet" href="/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-<nav id="updateNav">
-  <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
-  <a href="/books/search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
-  <a href="/books/create"><i class="fa-solid fa-square-plus"></i>Create</a>
-  <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
+<body class="update-page">
 
+<nav id="updateNav" class="nav">
+  <a href="/books" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="/books/search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+  <a href="/books/create" class="nav-link"><i class="fa-solid fa-square-plus"></i>Create</a>
+  <a href="/books/update" class="nav-link"><i class="fa-solid fa-pencil"></i>Update</a>
+  <a href="/books/delete" class="nav-link"><i class="fa-solid fa-delete-left"></i>Delete</a>
 </nav>
-<div id="updateHeaderDiv">
-  <h1 id="updateHeader">Update Book</h1>
+
+<div id="updateHeaderDiv" class="header">
+  <h1 id="updateHeader" class="page-header">Update Book</h1>
 </div>
 
-<form id="updateForm">
+<form id="updateForm" class="form">
 
-  <!-- Book ID -->
-  <label for="idUpdate">Book ID</label>
-  <input type="number" id="idUpdate" name="id" required/>
+  <label for="idUpdate" class="form-label">Book ID</label>
+  <input type="number" id="idUpdate" name="id" class="form-input" required/>
 
-  <!-- Book Title -->
-  <label for="titleUpdate">Title</label>
-  <input type="text" id="titleUpdate" name="title" required/>
+  <label for="titleUpdate" class="form-label">Title</label>
+  <input type="text" id="titleUpdate" name="title" class="form-input" required/>
 
-  <!-- Book Author -->
-  <label for="authorUpdate">Author</label>
-  <input type="text" id="authorUpdate" name="author" required/>
+  <label for="authorUpdate" class="form-label">Author</label>
+  <input type="text" id="authorUpdate" name="author" class="form-input" required/>
 
-  <!-- Book Publication Year -->
-  <label for="publicationYearUpdate">Publication Year</label>
-  <input type="text" id="publicationYearUpdate" name="publicationYear" required/>
-  <p id="responseMessageUpdate"></p>
-  <div id="updateButtonDiv">
-    <button type="submit" id="updateButton">Save</button>
+  <label for="publicationYearUpdate" class="form-label">Publication Year</label>
+  <input type="text" id="publicationYearUpdate" name="publicationYear" class="form-input" required/>
+  <p id="responseMessageUpdate" class="response-message"></p>
+
+  <div id="updateButtonDiv" class="button-container">
+    <button type="submit" id="updateButton" class="button">Save</button>
   </div>
 </form>
-
 <div id="otherUpdate">
   <p id="quoteUpdate">"Books are, let's face it, better than everything else. If we played Cultural Fantasy Boxing League, and made books go fifteen rounds in the ring against the best that any other art form had to offer, then books would win pretty much every time."</p>
   <p id="quoteAuthorUpdate">–Nick Hornby</p>

@@ -18,19 +18,19 @@ if (createForm) {
             if (response.ok) {
                 const createdBook = await response.json();
                 console.log('Book created: ', createdBook);
-                document.getElementById("responseMessage").innerHTML = 'Book created Successfully!';
+                document.getElementById("responseMessageCreate").innerHTML = 'Book created Successfully!';
             } else {
                 console.error('Failed to create book', response.status);
-                document.getElementById("responseMessage").innerHTML = "Failed to create book :(";
+                document.getElementById("responseMessageCreate").innerHTML = "Failed to create book :(";
             }
         } catch (error) {
             console.error('Error', error);
-            document.getElementById("responseMessage").innerHTML = "Error creating the book";
+            document.getElementById("responseMessageCreate").innerHTML = "Error creating the book";
         }
     });
 }
 
-updatePage = document.getElementById("update");
+updatePage = document.getElementById("updateForm");
 if (updatePage) {
     updatePage.addEventListener("submit", async function(event) {
         event.preventDefault();
