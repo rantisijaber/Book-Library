@@ -4,42 +4,43 @@
   <link rel="stylesheet" href="/style.css">
   <title>Book List</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
-<body>
+<body class="index-page">
 
-<nav id="indexNav">
-  <a href="/books/search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
-
-  <a href="/books/update"><i class="fa-solid fa-pencil"></i>Update</a>
-
-  <a href="/books/create"><i class="fa-solid fa-square-plus"></i>Create</a>
-
-  <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
+<nav class="nav">
+  <a href="/books" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="/books/search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+  <a href="/books/create" class="nav-link"><i class="fa-solid fa-square-plus"></i>Create</a>
+  <a href="/books/update" class="nav-link"><i class="fa-solid fa-pencil"></i>Update</a>
+  <a href="/books/delete" class="nav-link"><i class="fa-solid fa-delete-left"></i>Delete</a>
 </nav>
-<div id="headerDiv">
-  <h1 id="indexHeader">List of Books</h1>
+
+<div class="header">
+  <h1 class="page-header" id="listBooksHeader">List of Books</h1>
 </div>
-<div id="tableContainer">
-  <table border="1" id="tableHome">
+
+<div class="table-container">
+  <table border="1" class="table">
     <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Publication</th>
+      <th class="table-header">ID</th>
+      <th class="table-header">Title</th>
+      <th class="table-header">Author</th>
+      <th class="table-header">Publication</th>
     </tr>
     <tr th:each="book : ${books}">
-      <td th:text="${book.id}" class="bookInfo"></td>
-      <td th:text="${book.title}" class="bookInfo"></td>
-      <td th:text="${book.author}" class="bookInfo"></td>
-      <td th:text="${book.yearPublished}" class="bookInfo"></td>
+      <td th:text="${book.id}" class="book-info" id="bookId"></td>
+      <td th:text="${book.title}" class="book-info" id="bookTitle"></td>
+      <td th:text="${book.author}" class="book-info" id="bookAuthor"></td>
+      <td th:text="${book.yearPublished}" class="book-info" id="bookYear"></td>
     </tr>
   </table>
 </div>
-<div id="indexQuote">
-  <p id="indexQuoteItself">“Until I feared I would lose it, I never loved to read. One does not love breathing.”</p>
-  <p id="indexQuoteAuthor">-Harper Lee</p>
-  <img th:src="@{/images/imageindex.jpg}" alt="Book Image" id="imgIndex">
+
+<div class="quote-container">
+  <p class="quote" id="quoteText">“Until I feared I would lose it, I never loved to read. One does not love breathing.”</p>
+  <p class="quote-author" id="quoteAuthor">-Harper Lee</p>
+  <img th:src="@{/images/imageindex.jpg}" alt="Book Image" class="image" id="quoteImage">
 </div>
+
 </body>
 </html>

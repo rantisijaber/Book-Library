@@ -2,47 +2,50 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search for Book with ID</title>
+    <title>Create New Book</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
 </head>
-<body class="createPage">
-<nav id="createNav">
+<body class="create-page">
 
-    <a href="/books"><i class="fa-solid fa-house"></i>Home</a>
-
-    <a href="/books/search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
-
-    <a href="/books/update"><i class="fa-solid fa-pencil"></i>Update</a>
-
-    <a href="/books/delete">  <i class="fa-solid fa-delete-left"></i>Delete</a>
+<nav id="createNav" class="nav">
+    <a href="/books" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="/books/search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+    <a href="/books/create" class="nav-link"><i class="fa-solid fa-square-plus"></i>Create</a>
+    <a href="/books/update" class="nav-link"><i class="fa-solid fa-pencil"></i>Update</a>
+    <a href="/books/delete" class="nav-link"><i class="fa-solid fa-delete-left"></i>Delete</a>
 </nav>
-<div id="createHeaderDiv">
-    <h1 id="createHeader">Creation of New Book</h1>
+
+<div id="createHeaderDiv" class="header">
+    <h1 id="createHeader" class="page-header">Creation of New Book</h1>
 </div>
-<form id="create">
-    <label for="title" id="titleLabel">Title</label>
-    <input type="text" id="title" name="title" required>
 
-    <label for="author" id="authorLabel">Author</label>
-    <input type="text" id="author" name="author" required>
+<form id="create" class="form">
+    <label for="title" id="titleLabel" class="form-label">Title</label>
+    <input type="text" id="title" name="title" required class="form-input">
 
-    <label for="publicationYear" id="yearLabel">Publication year</label>
-    <input type="number" name="publicationYear" id="publicationYear" required>
+    <label for="author" id="authorLabel" class="form-label">Author</label>
+    <input type="text" id="author" name="author" required class="form-input">
 
-    <button type="submit" id="submitButtonCreate">Add Book</button>
+    <label for="publicationYear" id="yearLabel" class="form-label">Publication year</label>
+    <input type="number" name="publicationYear" id="publicationYear" required class="form-input">
+
+    <button type="submit" id="submitButtonCreate" class="form-button">Add</button>
 </form>
-<div id="messageDiv">
-    <p id="responseMessage"></p>
+
+<div id="messageDiv" class="message-container">
+    <p id="responseMessageCreate" class="response-message-text"></p>
 </div>
-<div id="createQuoteDiv">
-    <p id="createQuote">"Books are a uniquely portable magic"</p>
-    <p id="createQuoteAuthor">Stephen King</p>
-    <img id="imageCreate" th:src="@{/images/imageCreate.jpg}" alt="Book image">
+
+<div id="createQuoteDiv" class="quote-container">
+    <p id="createQuote" class="quote">"Books are a uniquely portable magic"</p>
+    <p id="createQuoteAuthor" class="quote-author">Stephen King</p>
+    <img id="imageCreate" class="image" th:src="@{/images/imageCreate.jpg}" alt="Book image">
 </div>
+
 <script src="/main.js"></script>
 
 </body>
 </html>
+
+
