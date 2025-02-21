@@ -1,211 +1,147 @@
-/* ------------- Index (Home) page ------------- */
+/* Global Styles */
 * {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: lightskyblue;
 }
 
-#indexNav a {
-    color: white;
-    font-weight: bold;
-}
 i {
     margin-right: 10px;
 }
 
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
 /* Header */
-#headerDiv {
+.page-header {
     text-align: center;
     color: white;
 }
+
+/* Form Styles */
+.form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-label {
+    font-size: 30px;
+}
+
+.form-input {
+    width: 350px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: white;
+    background: white;
+    text-align: center;
+}
+
+.form-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    border-color: white;
+    color: white;
+}
+
+/* Quote Section */
+.quote-container {
+    text-align: center;
+}
+
+.quote {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+.quote-author {
+    font-size: larger;
+    color: white;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+}
+
 /* Table */
-#tableHome {
+table {
     width: 50%;
     border-collapse: collapse;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
-
 }
 
 th, td {
     background: white;
     border: 1px solid #ddd;
     padding: 12px;
-
+    text-align: center;
 }
+
 .bookInfo {
     text-align: center;
 }
 
-#indexNav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-
-}
-#indexNav a {
-    color: white;
-    font-weight: bold;
-}
-i {
-    margin-right: 10px;
-}
-
-
-
-#indexQuote {
+/* Pages */
+.page {
     text-align: center;
 }
-#indexQuoteItself {
-    font-size: x-large;
-    color: white;
-    font-weight: bold;
 
-}
-#indexQuoteAuthor {
-    font-size: larger;
-    color: white;
-}
-#imgIndex {
-    width: 200px;
-    height: 200px;
-}
-
-/* Create Page */
-
-/* Create Nav */
-#createNav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-
-
-}
-#createNav a {
-    color: white;
-    font-weight: bold;
-}
-i {
-    margin-right: 10px;
-}
-
-/* Create Header */
-#createHeaderDiv {
-    text-align: center;
-}
-#createHeader {
+.page-header {
     color: white;
 }
 
-/* ------------- Create Book Input Form ------------- */
-#create {
+/* Specific Page Styles */
+.create-page, .search-page, .delete-page, .update-page {
+    padding: 20px;
+}
+
+/* Buttons */
+.form-button, .button {
+    width: 80px;
+    height: 45px;
+    border-radius: 12px;
+    border-color: white;
     color: white;
+    font-size: 17px;
+}
+
+#updateButton {
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+}
+
+/* Form Container for Update */
+#updateForm {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-
-
 }
-#titleLabel {
-    font-size: 30px;
-}
-#title {
-    width: 350px;
-    height: 30px;
-    border-radius: 12px;
-    border-color: white;
-    background: white;
-    text-align: center;
-
-}
-#authorLabel {
-    font-size: 30px;
-}
-#author {
-    width: 350px;
-    height: 30px;
-    border-radius: 12px;
-    border-color: white;
-    background: white;
-    text-align: center;
-
-}
-#yearLabel {
-    font-size: 30px;
-}
-#publicationYear {
-    width: 350px;
-    height: 30px;
-    border-radius: 12px;
-    border-color: white;
-    background: white;
-    text-align: center;
-
-}
-#submitButtonCreate {
-    border-radius: 12px;
-    border-color: white;
-    width: 100px;
-    height: 40px;
-    color: white;
-}
-/* Other */
-#messageDiv {
-    text-align: center;
-}
-#responseMessage {
-    color: white;
-}
-#createQuoteDiv {
-    text-align: center;
-}
-#createQuote {
-    font-size: x-large;
-    color: white;
-    font-weight: bold;
-
-}
-#createQuoteAuthor {
-    font-size: larger;
-    color: white;
-}
-#imageCreate {
-    width: 200px;
-    height: 200px;
-}
-
-
-/* ------------- Search Page ------------- */
-
-/* Search Nav */
-#searchNav {
-    display: flex;
-    justify-content: space-around;
-}
-
-#searchNav a {
-    color: white;
-}
-
-/* Search Header */
-#searchHeaderDiv {
-    text-align: center;
-}
-
-#searchHeader {
-    color: white;
-}
-
 
 /* Search Bar */
-#searchBarForm {
+#searchForm {
     text-align: center;
 }
-#idSearchInput {
+
+#idSearch {
     border-radius: 12px;
     text-align: center;
     font-size: 17px;
@@ -213,11 +149,8 @@ i {
     width: 50px;
     height: 40px;
     background: white;
+}
 
-}
-#searchLabel {
-    color: white;
-}
 #searchButton {
     color: white;
     border-color: white;
@@ -226,220 +159,59 @@ i {
     height: 45px;
 }
 
-/* Search Book Information Table */
-#searchTable {
-    border-radius: 12px;
-    margin: auto;
-    border: 1px solid white;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
-    overflow: hidden;
-}
-
-
-/* Other (Search) */
-#otherSearch {
-    text-align: center;
-
-}
-#catImageSearch {
-    width: 200px;
-    height: 200px
-}
-#quoteSearch {
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-}
-#quoteAuthorSearch {
-    color: white;
-    font-size: large;
-}
-#errorDiv {
-    text-align: center;
-}
-#responseMessageSearch {
+/* Error and Response Messages */
+.response-message, .result-message, #responseMessageCreate {
     color: white;
     font-size: 20px;
 }
 
-
-/* ------------- Delete Page ------------- */
-
-/* Nav Delete */
-#deleteNav {
-    display: flex;
-    justify-content: space-around;
-}
-
-#deleteNav a {
-    color: white;
-}
-
-/* Header Delete */
-#deleteHeaderDiv {
-    text-align: center;
-}
-
-#deleteHeader {
-    color: white;
-}
-
-/* ID Delete */
-
-#deleteForm {
-    text-align: center;
-}
-#idDelete {
-    border-radius: 12px;
-    text-align: center;
-    font-size: 17px;
-    border-color: white;
-    width: 50px;
-    height: 40px;
-    background: white;
-
-}
-#deleteLabel {
-    color: white;
-}
-
-#deleteButton {
-    color: white;
-    border-color: white;
-    border-radius: 12px;
-    width: 80px;
-    height: 45px;
-}
-
-/* Other Delete */
-#deleteOther {
-    text-align: center;
-}
-#quoteDelete {
-    font-size: x-large;
-    color: white;
-    font-weight: bold;
-
-}
-#quoteDeleteAuthor {
-    font-size: larger;
-    color: white;
-}
-#deleteImage {
+/* Responsive Images */
+#imgIndex, #deleteImage, #updateImage, #imageCreate, #imageSearch {
     width: 200px;
     height: auto;
 }
-#deleteResponseDiv {
-    text-align: center;
-}
-#responseMessageDelete {
-    color: white;
-    font-size: 20px;
-}
 
-/* ------------- Update Page ------------- */
-
-/* Nav Update */
-#updateNav {
-    display: flex;
-    justify-content: space-around;
-}
-#updateNav a {
-    color: white;
-}
-
-/* Header Update */
-#updateHeaderDiv {
-    text-align: center;
-}
-#updateHeader {
-    color: white;
-}
-
-/* Update Form */
-
-#updateForm {
+/* Create, Delete, Update */
+#create, #deleteForm, #updateForm {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
-
 }
 
-#updateForm label {
-    color: white;
-}
-
-
-#idUpdate {
+#idDelete, #idUpdate, #title, #author, #publicationYear, #titleUpdate, #authorUpdate, #publicationYearUpdate {
     width: 350px;
     height: 30px;
     border-radius: 12px;
     border-color: white;
     background: white;
     text-align: center;
-
 }
-#updateButtonDiv {
+
+/* Message Div */
+#messageDiv, #responseMessageDiv, #otherUpdate, #otherDelete, #otherSearch {
     text-align: center;
 }
-#updateForm button {
-    border-radius: 12px;
-    border-color: white;
-    width: 300px;
-    height: 80px;
-    color: white;
-    font-size: 30px;
-}
 
-#titleUpdate {
-    width: 350px;
-    height: 30px;
-    border-radius: 12px;
-    border-color: white;
-    background: white;
-    text-align: center;
-
-}
-
-#authorUpdate {
-    width: 350px;
-    height: 30px;
-    border-radius: 12px;
-    border-color: white;
-    background: white;
-    text-align: center;
-
-}
-
-#publicationYearUpdate {
-    width: 350px;
-    height: 30px;
-    border-radius: 12px;
-    border-color: white;
-    background: white;
-    text-align: center;
-
-}
-
-/* Other (Update) */
-
-#otherUpdate {
-    text-align: center;
-
-}
-
-#quoteUpdate {
+/* Quotes */
+#quoteSearch, #quoteUpdate, #quoteDelete, #quoteText {
     color: white;
     font-size: x-large;
+    font-weight: bold;
 }
 
-#quoteAuthorUpdate {
-    color: white;
+#quoteAuthorSearch, #quoteAuthorUpdate, #quoteDeleteAuthor, #quoteAuthor {
     font-size: large;
+    color: white;
 }
 
-#updateImage {
-    width: 200px;
-    height: auto;
+/* Other (Empty spaces) */
+#otherSearch, #otherUpdate, #deleteOther, #otherDelete {
+    text-align: center;
 }
+
+#catImageSearch {
+    width: 200px;
+    height: 200px;
+}
+
